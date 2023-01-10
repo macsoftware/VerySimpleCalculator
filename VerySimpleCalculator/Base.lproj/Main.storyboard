@@ -36,21 +36,33 @@
                                 <rect key="frame" x="114" y="217" width="35" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <connections>
+                                    <action selector="additionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouo-GB-TEJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxT-iD-vwY">
                                 <rect key="frame" x="159" y="217" width="32" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                <connections>
+                                    <action selector="subtractionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmy-Fx-z0H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lth-fk-7LB">
                                 <rect key="frame" x="202" y="217" width="32" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="*"/>
+                                <connections>
+                                    <action selector="multiplicationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hu-Mb-qyF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zh-HX-FUZ">
                                 <rect key="frame" x="246" y="217" width="29" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="/"/>
+                                <connections>
+                                    <action selector="divisionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DM9-zX-dPx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19f-gg-3r4">
                                 <rect key="frame" x="28" y="260" width="336" height="71"/>
@@ -83,6 +95,11 @@
                             <constraint firstItem="nsd-b3-n7t" firstAttribute="top" secondItem="tr8-WN-7MW" secondAttribute="bottom" constant="8" id="ybu-ns-cfC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="tr8-WN-7MW" id="s9M-0S-5nD"/>
+                        <outlet property="resultLabel" destination="19f-gg-3r4" id="hhF-gw-stS"/>
+                        <outlet property="secondTextField" destination="nsd-b3-n7t" id="K5e-Le-N2H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
